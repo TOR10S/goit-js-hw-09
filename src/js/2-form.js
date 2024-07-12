@@ -23,7 +23,8 @@ function refillMessage() {
     form.elements.email.value = refillObject.email
     form.elements.message.value = refillObject.message
     } catch (error) {
-        
+        console.log(error.name);
+        console.log(error.message);
     }
 
 }
