@@ -41,10 +41,15 @@ function handleSubmit(event) {
     };
     if (info.email === "" || info.message === "") {
         return alert("Fill please all fields");
-    } else {
+    } 
         console.log(formData);
         localStorage.clear();
-        form.reset();
+        form.reset();    
+        formDataReset();
     }
-}
+
+    function formDataReset() {
+        formData.email = "";
+        formData.message = "";
+    }
 
